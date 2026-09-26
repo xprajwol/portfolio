@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  height: 64px;
+  background: rgba(7, 16, 31, 0.75);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, background 0.3s;
+}
+.navbar.scrolled {
+  border-bottom-color: var(--border);
+  background: rgba(7, 16, 31, 0.92);
+}
+
+.nav-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 1.1rem;
+  color: var(--cyan);
+  letter-spacing: 0.05em;
+}
+.nav-logo .bracket { color: var(--violet); }
+
+.nav-links.desktop { display: flex; gap: clamp(1rem, 3vw, 2rem); }
+
+.nav-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem; font-weight: 500;
+  color: var(--muted); text-decoration: none;
+  position: relative; padding: 4px 0;
+  transition: color 0.25s;
+  letter-spacing: 0.03em;
+}
+.nav-link::after {
+  content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+  height: 1px; background: var(--cyan);
+  transform: scaleX(0); transition: transform 0.25s;
+}
+.nav-link:hover, .nav-link.active { color: var(--cyan); }
+.nav-link.active::after, .nav-link:hover::after { transform: scaleX(1); }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--cyan); border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobile-menu {
+  position: absolute; top: 64px; left: 0; right: 0;
+  background: rgba(7, 16, 31, 0.97);
+  border-bottom: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  padding: 1rem 0;
+}
+.mobile-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem; font-weight: 500;
+  color: var(--muted); padding: 0.75rem 2rem;
+  transition: color 0.2s, background 0.2s;
+}
+.mobile-link:hover, .mobile-link.active {
+  color: var(--cyan);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+@media (max-width: 580px) {
+  .nav-links.desktop { display: none; }
+  .hamburger { display: flex; }
+}

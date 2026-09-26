@@ -1,0 +1,71 @@
+.home-container {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem clamp(1.5rem, 8vw, 7rem) 6rem;
+}
+
+.corner-tl, .corner-br {
+  position: absolute;
+  width: 40px; height: 40px;
+  opacity: 0.4;
+}
+.corner-tl { top: 2rem; left: clamp(1.5rem, 8vw, 7rem); border-top: 2px solid var(--cyan); border-left: 2px solid var(--cyan); }
+.corner-br { bottom: 4rem; right: clamp(1.5rem, 6vw, 5rem); border-bottom: 2px solid var(--cyan); border-right: 2px solid var(--cyan); }
+
+.home-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem; color: var(--cyan);
+  border: 1px solid var(--border);
+  padding: 4px 12px; border-radius: 2px;
+  margin-bottom: 2rem;
+  letter-spacing: 0.08em;
+  display: inline-block;
+}
+
+.home-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 9vw, 7rem);
+  font-weight: 700; line-height: 1.0;
+  color: var(--white); margin-bottom: 1rem;
+}
+.home-name span { color: var(--cyan); }
+
+.home-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 300; color: var(--violet);
+  margin-bottom: 2rem; letter-spacing: 0.02em;
+}
+
+.home-bio {
+  max-width: 520px;
+  font-size: 0.95rem; line-height: 1.8;
+  color: var(--muted); margin-bottom: 3rem;
+}
+
+.home-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.home-stats {
+  position: absolute;
+  right: clamp(1.5rem, 6vw, 5rem);
+  bottom: 4rem;
+  display: flex; gap: 2.5rem;
+}
+
+.stat-item { text-align: right; }
+.stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem; font-weight: 700;
+  color: var(--cyan); display: block;
+}
+.stat-label {
+  font-size: 0.72rem; color: var(--muted);
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .home-stats { position: static; margin-top: 3rem; }
+}
