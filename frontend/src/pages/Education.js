@@ -17,6 +17,7 @@ const timeline = [
     year: '2024 – 2026 · CURRENT',
     degree: 'NEB 10+2 — Grade XII (Science)',
     institution: 'Nepal Education Board · Nepal',
+    collage: 'dhambojhi secondary school',
     description: 'Completing higher secondary education with a focus on Physics, Mathematics, and Computer Science. Topics include complex numbers, conic sections, differential equations, semiconductor physics, and diffraction.',
     badge: 'In Progress',
     color: 'var(--violet)',

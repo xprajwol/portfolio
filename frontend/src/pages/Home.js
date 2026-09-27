@@ -26,7 +26,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            // PORTFOLIO_v1.0 — XRAJWAL
+            // PORTFOLIO_v1.0 — PRAJWAL
           </motion.div>
 
           <motion.h1
@@ -35,7 +35,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            Raj<span>wal</span>
+            Paj<span>wal Sharma</span>
           </motion.h1>
 
           <motion.p
