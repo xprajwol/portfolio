@@ -12,7 +12,7 @@ const skills = [
 ];
 
 const tools = ['Python', 'OpenCV', 'pyttsx3', 'NumPy', 'Git', 'VS Code', 'Linux'];
-const interests = ['🇦🇷 Football', '🎵 Music', '🔍 Fact-Checking', '🧠 AI/ML', '📡 Computer Vision', '📚 History'];
+const interests = ['⚽ Real Madrid', '🎵 Music', '🔍 Fact-Checking', '🧠 AI/ML', '📡 Computer Vision', '📚 History'];
 
 export default function About() {
   return (
