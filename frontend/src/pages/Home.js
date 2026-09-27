@@ -92,7 +92,7 @@ export default function Home() {
         </motion.div>
       </div>
       <footer>
-        Built by <span>Xrajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026
+        Built by <span>Prajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026
       </footer>
     </PageWrapper>
   );

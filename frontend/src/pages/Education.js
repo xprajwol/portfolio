@@ -5,21 +5,21 @@ import './Education.css';
 
 const timeline = [
   {
-    year: '2026 → UPCOMING',
+    year: '2026 – 2030 .Current',
     degree: 'BSc (Hons) Computer Science with Artificial Intelligence',
     institution: 'Softwarica College of IT & E-Commerce · Coventry University, UK',
     description: 'Planning to pursue a bachelor\'s degree specialising in AI and software systems. The programme covers machine learning, data structures, algorithms, software engineering, and AI ethics.',
-    badge: 'Planned Admission',
+    badge: '41B',
     color: 'var(--cyan)',
     dotColor: 'var(--cyan)',
   },
   {
-    year: '2024 – 2026 · CURRENT',
+    year: '2024 – 2026',
     degree: 'NEB 10+2 — Grade XII (Science)',
     institution: 'Nepal Education Board · Nepal',
     collage: 'dhambojhi secondary school',
     description: 'Completing higher secondary education with a focus on Physics, Mathematics, and Computer Science. Topics include complex numbers, conic sections, differential equations, semiconductor physics, and diffraction.',
-    badge: 'In Progress',
+    badge: 'Completed',
     color: 'var(--violet)',
     dotColor: 'var(--violet)',
   },
@@ -27,6 +27,7 @@ const timeline = [
     year: 'PRIOR',
     degree: 'SEE — Secondary Education Examination',
     institution: 'Nepal Education Board',
+    collage: 'dhambojhi secondary school',
     description: 'Completed the SEE (formerly SLC), Nepal\'s national Grade 10 board examination, laying the foundation in sciences and mathematics.',
     badge: 'Completed',
     color: 'var(--muted)',
@@ -66,7 +67,7 @@ export default function Education() {
           ))}
         </div>
       </div>
-      <footer>Built by <span>Xrajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026</footer>
+      <footer>Built by <span>Prajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026</footer>
     </PageWrapper>
   );
 }

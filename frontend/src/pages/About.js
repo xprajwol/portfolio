@@ -28,7 +28,7 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <p>I'm <strong>Xrajwal</strong>, a student based in <strong>Kathmandu, Nepal</strong>, currently completing NEB 10+2 (Grade XII). My focus lies at the intersection of software engineering and artificial intelligence.</p>
+            <p>I'm <strong>Prajwal</strong>, a student based in <strong>Kathmandu, Nepal</strong>, currently completing NEB 10+2 (Grade XII). My focus lies at the intersection of software engineering and artificial intelligence.</p>
             <p>I enjoy building things that actually work — my most significant project is a <strong>real-time face detection and recognition system</strong> built with Python, OpenCV, and LBPH algorithms, complete with voice announcement features.</p>
             <p>Outside code, I follow football passionately (Argentina 🇦🇷!), enjoy Nepali and Bollywood music, and have a deep interest in how technology shapes our understanding of truth — from fact-checking viral claims to exploring the history of ideas.</p>
             <div className="interest-tags">
@@ -72,7 +72,7 @@ export default function About() {
           </motion.div>
         </div>
       </div>
-      <footer>Built by <span>Xrajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026</footer>
+      <footer>Built by <span>Prajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026</footer>
     </PageWrapper>
   );
 }

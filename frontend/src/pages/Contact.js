@@ -123,7 +123,7 @@ export default function Contact() {
           </motion.form>
         </div>
       </div>
-      <footer>Built by <span>Xrajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026</footer>
+      <footer>Built by <span>Prajwal</span> &nbsp;·&nbsp; Nepal &nbsp;·&nbsp; 2026</footer>
     </PageWrapper>
   );
 }
