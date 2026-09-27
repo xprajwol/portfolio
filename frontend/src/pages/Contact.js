@@ -5,7 +5,7 @@ import { postContact } from '../hooks/useApi';
 import './Contact.css';
 
 const contactLinks = [
-  { icon: '✉', label: 'your@email.com', href: 'mailto:your@email.com', note: '(update this)' },
+  { icon: '✉', label: 'xprajwol6@gmail.com', href: 'mailto:xprajwol6@gmail.com', note: '(update this)' },
   { icon: 'GH', label: 'github.com/xrajwal', href: 'https://github.com/xrajwal' },
   { icon: 'LI', label: 'linkedin.com/in/xrajwal', href: '#' },
   { icon: '📍', label: 'Kathmandu, Nepal', href: '#' },
